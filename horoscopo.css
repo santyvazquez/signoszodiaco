@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/**
+* TODO: ESTILOS DEL BANNER
+*/
+
+.banner {
+    width: 100%;
+    height: 700px;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes banner {
+
+    0%,
+    20% {
+        background-image: url(../images/banner.jpg);
+    }
+
+    25%,
+    45% {
+        background-image: url(../images/banner2.jpg);
+    }
+
+    50%,
+    70% {
+        background-image: url(../images/banner3.jpg);
+    }
+
+    75%,
+    100% {
+        background-image: url(../images/banner4.jpg);
+    }
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.info {
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+.info h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.info p {
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    background: #3088e0;
+    padding: 16px 37px;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/**
+* TODO: ESTILOS DEL HEADER
+*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #28174F 0%, #6261D0 35%, #AE64E5 100%);
+    position: sticky;
+    top: 0;
+    padding: 20px 60px;
+    z-index: 1000;
+}
+
+.interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    margin-top: -16px;
+    margin-left: -22px;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.barra {
+    float: right;
+    display: flex;
+    line-height: 60px;
+    margin-right: -40px;
+}
+
+#Inicio {
+    background: rgba(222, 173, 255, 0.921);
+    border-radius: 15px;
+    color: black;
+}
+
+#Inicio:hover {
+    background: rgba(255, 255, 255, 0.921);
+    color: #aa00ff;
+}
+
+.barra ul {
+    list-style: none;
+}
+
+.barra ul li {
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.barra ul li:hover {
+    transform: scale(1.1);
+}
+
+.barra ul li a {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.barra ul li a:hover {
+    color: white;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+/**
+* TODO: ESTILOS DEL BODY
+*/
+
+body {
+    height: auto;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+}
+
+.general {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.principal {
+    width: 75%;
+    height: auto;
+    padding: 40px 60px;
+}
+
+#pie {
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin-top: -3%;
+}
+
+.principal h1 {
+    font-size: 30px;
+}
+
+.principal h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: red;
+}
+
+.principal h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+hr {
+    border: 1px dashed red;
+    width: 400px;
+}
+
+.principal p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.tierra {
+    color: rgba(165, 76, 34, 0.848);
+}
+
+.aire {
+    color: rgb(140, 140, 140);
+}
+
+.agua {
+    color: lightskyblue;
+}
+
+.fuego {
+    color: rgb(255, 38, 38);
+}
+
+/**
+* ? COMO HAGO IMAGENES RESPONSIVE?
+*/
+
+.principal img {
+    width: 90%;
+    height: 500px;
+    display: block;
+    margin: 30px auto;
+}
+
+aside  {
+    width: 20%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+    margin-left: 60px;
+    padding: 20px 20px;
+    margin: 20px 0;
+}
+
+aside h2 {
+    color: purple;
+}
+
+aside p {
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+/** 
+* TODO: ESTILOS DEL FOOTER
+*/
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #28174F 0%, #6261D0 35%, #AE64E5 100%);
+    padding: 70px 0;
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-pinterest:hover {
+    color: #E60023;
+}
+
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+
+.fa-google:hover {
+    color: #dd4b39;
+}
+
+.footer-col .logo-footer {
+    width: 200px;
+    height: 200px;
+}
+
+.footer-bottom {
+    background: #0D0D0D;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom a {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.first-box {
+    margin: 5px auto;
+}
+
+/**
+* ? USO DE MEDIAQUERIES
+*/
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .barra {
+        float: left;
+        display: flex;
+        line-height: 60px;
+        margin-left: 30px;
+    }
+
+    .barra ul li a {
+        font-size: 10px;
+        padding: 12px 5px;
+    }
+
+    .principal {
+        padding: 10px 20px;
+    }
+}

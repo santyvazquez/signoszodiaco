@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luis Santiago Vazquez Alvarado">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My signo es</title>
+    <link rel="stylesheet" href="signos.css">
+    <link rel="shortcut icon" href="LogoWhiteSF.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="interior">
+            <a href="index.html" class="logo"><img src="LogoWhiteSF.png"></a>
+            <nav class="barra">
+                <ul>
+                    <li><a href="index.html" id="Inicio">Home</a></li>
+                    <li><a href="signos.html">My sing</a></li>
+                    <li><a href="horoscopo.html">Horóscopo</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="general">
+            <div class="principal">
+                <h1>¿Cuál es tu signo zodiacal?</h1>
+                <div class="caja-problema">
+                    <p>Ingresa tu día y mes de nacimiento:</p>
+                    <input type="number" id="dia" placeholder="Día">
+                    <input type="number" id="mes" placeholder="Mes">
+                    <button onclick="calcularSigno()">Calcular</button>
+                    <b><p id="resultado"></p></b>
+                    <script src="index.js"></script>
+                </div>
+            </div>
+            <aside>
+                <h2>Sabias que...?</h2>
+                <p>Aries es el primer signo del zodiaco y representa el comienzo de un nuevo ciclo. Piscis es el último signo y representa el final de un ciclo.</p>
+                <p>A pesar de su popularidad, la astrología y los signos zodiacales son considerados pseudocientíficos por muchos científicos y escépticos.</p>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="signos.html">My signo</a></li>
+                        <li><a href="horoscopo.html">Tu Horóscopo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Acerca de</h4>
+                    <ul>
+                        <li><a href="#">Tus datos</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Uso de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cliente</h4>
+                    <ul>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Información de contacto</a></li>
+                        <li><a href="#">Atención a cliente</a></li>
+                        <li><a href="#">Preguntas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <img src="LogoWhiteSF.png" class="logo-footer">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="first-box">
+            <a href="#">©Copyright 2023 / Santy's Desing S.A. / - Publicidad: 944010751 / Todos los derechos
+                reservados</a>
+        </div>
+    </div>
+</body>
+
+</html>
